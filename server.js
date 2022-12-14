@@ -24,7 +24,7 @@ app.use('/resources', express.static(path.join(__dirname, 'public')));
 app.set('views', `views`);
 app.set('view engine', 'hbs');
 
-const mongoUri = 'mongodb://localhost:27017/webpage_builder';
+const mongoUri = 'mongodb://127.0.0.1:27017/webpage_builder';
 mongoose.connect(
   mongoUri,
   {
